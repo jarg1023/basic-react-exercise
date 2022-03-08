@@ -11,26 +11,26 @@ export const App = () => {
   const part3 = 'State of a component'
   const exercises3 = 14
 
+  const exercises = {
+    exercises1: exercises1,
+    exercises2: exercises2,
+    exercises3: exercises3
+  }
+
+  const parts = {
+    part1: part1,
+    part2: part2,
+    part3: part3
+  }
+
   return (
     <div>
       <Header course={course} />
       <Content
-        parts={[
-          part1,
-          part2,
-          part3
-        ]}
-        exercises={[
-          exercises1,
-          exercises2,
-          exercises3
-        ]}
+        parts={parts}
+        exercises={exercises}
       />
-      <Total exercises={[
-        exercises1,
-        exercises2,
-        exercises3
-      ]}/>
+      <Total exercises={exercises}/>
     </div>
   )
 }

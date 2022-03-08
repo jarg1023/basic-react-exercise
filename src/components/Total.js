@@ -1,7 +1,13 @@
+const sum = (a, b, c) => {
+    return a + b + c
+}
+
 export const Total = (props) => {
-    let total = props.exercises.reduce((accumulator, current) => {
-        return accumulator + current;
-    }, 0)
+    let total = sum(
+        props.exercises.exercises1,
+        props.exercises.exercises2,
+        props.exercises.exercises3
+    )
 
     return (
         <p>
