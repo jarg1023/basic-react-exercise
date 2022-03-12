@@ -1,7 +1,8 @@
 export const Part = (props) => {
+    console.table(props)
     return (
         <p>
-            {props.part} {props.exercises}
+            {props.part.name} {props.exercises}
         </p>
     )
 }
